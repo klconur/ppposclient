@@ -182,7 +182,7 @@ void PPPOS_init(int txPin, int rxPin, int baudrate, int uart_number, char* user,
       .data_bits = UART_DATA_8_BITS,
       .parity = UART_PARITY_DISABLE,
       .stop_bits = UART_STOP_BITS_1,
-      .flow_ctrl = UART_HW_FLOWCTRL_DISABLE
+      .flow_ctrl = UART_HW_FLOWCTRL_CTS_RTS
   };
 
   uart_param_config(PPPOS_uart_num, &uart_config) ;
